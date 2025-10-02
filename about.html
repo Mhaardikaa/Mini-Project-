@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"> <script src="js/script.js" defer></script>
+  <style>
+    body {
+      background-image: url('gtr3.jpg');
+      background-size: cover; 
+      background-position: center; 
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    body.fade-in {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex flex-col">
+  <header class="bg-black/40 backdrop-blur-md fixed w-full z-10">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Mahardika's Digital Space</h1>
+      <ul class="flex gap-6">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="text-yellow-300">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flex-grow flex flex-col justify-center items-center text-center px-6 pt-28">
+    <h1 class="text-4xl font-extrabold mb-6 animate-fade-in-up">About Me</h1>
+    <p class="max-w-2xl text-lg mb-6 animate-fade-in-up delay-100">I am passionate about learning, coding, and designing. My interests include web development, data science. I believe in continuous improvement and lifelong learning.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <div class="bg-black/60 p-6 rounded-xl shadow-lg hover:scale-105 transition animate-slide-up delay-200">
+        <h2 class="text-xl font-bold mb-2">Background</h2>
+        <p>I am the second of two siblings. I studied at Satya Wacana Christian University, majoring in Information Technology with a concentration in Data Science. I began this journey with a keen interest in the world of technology and how data can be processed into something more meaningful. Now, in my seventh semester, I am focusing on my final project, which is the culmination of all my learning. As a student, I believe that the learning process does not only take place in the classroom. I actively participate in various activities and projects to broaden my knowledge and practical experience. .</p>
+      </div>
+      <div class="bg-black/60 p-6 rounded-xl shadow-lg hover:scale-105 transition animate-slide-up delay-300">
+        <h2 class="text-xl font-bold mb-2">Interests</h2>
+        <p>Outside of work and study, I have a variety of interests. I really enjoy sports because they teach me about hard work and discipline. In addition, I also enjoy exploring the latest technology. To relax, I like to ride my motorcycle and stop by a local cafe to enjoy a cup of my favorite coffee or matcha.</p>
+      </div>
+      <div class="bg-black/60 p-6 rounded-xl shadow-lg hover:scale-105 transition animate-slide-up delay-400">
+        <h2 class="text-xl font-bold mb-2">Goals</h2> 
+        <p>I have a goal to complete my education as soon as possible and start my career as a professional in the field of Data Science. I believe that by continuing to learn and collaborate, I can make a real contribution. More than that, I want to be someone who can make my parents proud of every step I take. </p>
+      </div>
+    </div>
+  </main>
+  <script>
+    document.body.classList.add('fade-in');
+  </script>
+</body>
+</html>

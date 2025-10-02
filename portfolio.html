@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css"> <script src="js/script.js" defer></script>
+  <style>
+    body {
+      background-image: url('gtr4.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    body.fade-in {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+  <header class="bg-black/40 backdrop-blur-md fixed w-full z-10">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-2xl font-bold">Mahardika's Digital Space</h1>
+      <ul class="flex gap-6">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html" class="text-yellow-300">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="flex-grow pt-28 px-6 max-w-screen-md mx-auto">
+    <h1 class="text-4xl font-extrabold text-center mb-10 animate-fade-in-up">My Projects</h1>
+    <div class="grid grid-cols-1 md:grid-cols-1 gap-8">
+      <div class="bg-black/60 rounded-xl p-4 shadow-lg hover:scale-105 transition animate-fade-in-up delay-100">
+        <h2 class="text-lg font-bold mb-1">Web Design</h2>
+        <p class="text-sm">Responsive and modern websites with Tailwind and React.</p>
+        <p class="text-sm">Web quiz about JavaScript.</p>
+        <p class="text-sm">Web An online store</p>
+      </div>
+      <div class="bg-black/60 rounded-xl p-4 shadow-lg hover:scale-105 transition animate-fade-in-up delay-200">
+        <h2 class="text-lg font-bold mb-1">Data Analysis</h2>
+        <p class="text-sm">Python-based data science projects and dashboards.</p>
+        <p class="text-sm">Oracle data science.</p>
+      </div>
+      <div class="bg-black/60 rounded-xl p-4 shadow-lg hover:scale-105 transition animate-fade-in-up delay-300">
+        <h2 class="text-lg font-bold mb-1">Figma Mockup</h2>
+        <p class="text-sm">Design figma of an iced tea shop.</p>
+        <p class="text-sm">Design figma a vape and pods store.</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    document.body.classList.add('fade-in');
+  </script>
+</body>
+</html>
